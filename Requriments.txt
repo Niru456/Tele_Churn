@@ -4,4 +4,4 @@
  RandomForestClassifier
  streamlit
  sklearn 
- 
+ pip install sklearn
