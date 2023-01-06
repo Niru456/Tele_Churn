@@ -6,7 +6,7 @@ Created on Thu Jan  5 18:30:21 2023
 """
 
 #pip install xgboost
-pip install scikit-learn
+#pip install scikit-learn
 import numpy as np
 import pickle
 import pandas as pd
