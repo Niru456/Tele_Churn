@@ -11,13 +11,13 @@ import numpy as np
 import pickle
 import pandas as pd
 import streamlit as st 
-#from sklearn.ensemble import RandomForestClassifier
+from sklearn.ensemble import RandomForestClassifier
 from PIL import Image
 
 st.set_page_config(layout="centered")
 
 pickle_in = open("rfcintel1.pkl","rb")
-rfc1 = pickle.load(pickle_in)
+rfcintel1= pickle.load(pickle_in)
 
 def welcome():
     return "Welcome All"
@@ -37,7 +37,7 @@ def Churn_data(account_length,voice_mail_plan,voice_mail_messages,day_mins,
     else:
         international_plan = 1 
    
-    prediction = rfc1.predict([[account_length,voice_mail_plan,voice_mail_messages,day_mins,evening_mins,night_mins,
+    prediction = rfcintel1.predict([[account_length,voice_mail_plan,voice_mail_messages,day_mins,evening_mins,night_mins,
                     international_mins,customer_service_calls,international_plan,day_calls,
                     day_charge,evening_calls,evening_charge,night_calls,night_charge,
                     international_calls,international_charge,total_charge]])
