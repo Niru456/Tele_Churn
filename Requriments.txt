@@ -1,5 +1,5 @@
 numpy==1.18.1
 pandas==1.0.1
 streamlit==1.15.1
-Rtree==0.9.3
+rfc==0.1.0
 scikit-learn==1.0.2
