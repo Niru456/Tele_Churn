@@ -6,12 +6,12 @@ Created on Thu Jan  5 18:30:21 2023
 """
 
 #pip install xgboost
-pip install sklearn
+#pip install sklearn
 import numpy as np
 import pickle
 import pandas as pd
 import streamlit as st 
-
+#from sklearn.ensemble import RandomForestClassifier
 from PIL import Image
 
 st.set_page_config(layout="centered")
