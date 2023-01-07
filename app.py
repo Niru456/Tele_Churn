@@ -17,7 +17,7 @@ from PIL import Image
 
 st.set_page_config(layout="centered")
 
-pickle_in = open("C:\\Users\\20050\\model_deplyoment_churn\\rfcintel1.pkl","rb")
+pickle_in = open("rfcintel1.pkl","rb")
 rfcintel1 = pickle.load(pickle_in)
 
 def welcome():
